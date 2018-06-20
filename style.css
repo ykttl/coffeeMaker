@@ -2,21 +2,43 @@
 
 body {
     background: #d2a779;
+    display: flex;
+    justify-content: center;
+
+
 }
+
+.box {
+	width: 300px;
+    height: 600px;
+    padding: 5px; 
+    margin: 20px;
+   font-family: 'Paytone One', sans-serif;
+    text-align: center;
+    background: pink;
+    font-size: 25px;
+   
+}
+
+.box p {
+	color: gray;
+}
+
 
 .container {
 	width: 500px;
     height: 600px;
-    margin: 0 auto;
+   margin: 20px;
     padding: 5px; 
    font-family: 'Paytone One', sans-serif;
     text-align: center;
     background: white;
+
 }
 
 h1 {
 	color: #804000;
-	font-size: 40px;
+	font-size: 50px;
 	margin-top: 15px;
 }
 

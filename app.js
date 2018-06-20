@@ -195,7 +195,7 @@ var render = {
 			document.getElementById('magcup').appendChild(milk);
 
 		if (data.milk.sliderValue === 1) { 		
-		  	data.milk.height = '60px';
+		  	data.milk.height = '80px';
 		} 
 
 		if(data.milk.sliderValue === 2) { 
@@ -257,7 +257,7 @@ var render = {
 		if(data.espresso.sliderValue === 1 && data.milk.sliderValue === 1 && data.foam.sliderValue === 0 ) {
 			coffeeName = 'piccolo';
 		}
-		if(data.espresso.sliderValue != 0 && data.milk.sliderValue === 2 && data.foam.sliderValue === 1 ) {
+		if(data.espresso.sliderValue === 1 && data.milk.sliderValue === 2 && data.foam.sliderValue === 1 ) {
 			coffeeName = 'latte';
 		}
 		if(data.espresso.sliderValue === 1 && data.milk.sliderValue === 1 && data.foam.sliderValue === 1 ) {
