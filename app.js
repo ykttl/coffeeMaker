@@ -48,7 +48,6 @@ var event = {
 
 			var slider = document.getElementById('espresso-slider').value; // this returns number as string
 
-
 			if(slider == 1 && data.espresso.slider0 === true) { 
 				console.log( '0 -> 1');
 				data.espresso.sliderValue = 1;
@@ -159,7 +158,7 @@ var event = {
 			}
 
 			render.coffeeName();
-
+            
 		})
 	},
 };
@@ -247,41 +246,63 @@ var render = {
 	},
 
 	coffeeName: function () {
-		var coffeeName = data.coffeeName;
+		//var coffeeName = data.coffeeName;
 		if(data.espresso.sliderValue === 1 && data.milk.sliderValue === 0 && data.foam.sliderValue === 0) {
-			coffeeName = 'espresso';
+			data.coffeeName = 'espresso';
 		}
 		if(data.espresso.sliderValue === 1 && data.milk.sliderValue === 0 && data.foam.sliderValue === 1 ) {
-			coffeeName = 'espresso macchiato';
+			data.coffeeName = 'macchiato';
 		}
 		if(data.espresso.sliderValue === 1 && data.milk.sliderValue === 1 && data.foam.sliderValue === 0 ) {
-			coffeeName = 'piccolo';
+			data.coffeeName = 'piccolo';
 		}
 		if(data.espresso.sliderValue === 1 && data.milk.sliderValue === 2 && data.foam.sliderValue === 1 ) {
-			coffeeName = 'latte';
+			data.coffeeName = 'latte';
 		}
 		if(data.espresso.sliderValue === 1 && data.milk.sliderValue === 1 && data.foam.sliderValue === 1 ) {
-			coffeeName = 'cappuccino';
+			data.coffeeName = 'cappuccino';
 		}
 		if(data.espresso.sliderValue === 1 && data.milk.sliderValue === 2 && data.foam.sliderValue === 0 ) {
-			coffeeName = 'flat white';
+			data.coffeeName = 'flat white';
 		}
 		if(data.espresso.sliderValue === 0 && data.milk.sliderValue != 0 && data.foam.sliderValue != 0 ) {
-			coffeeName = 'foamed milk';
+			data.coffeeName = 'foamed milk';
 		}
 		if(data.espresso.sliderValue === 0 && data.milk.sliderValue != 0 && data.foam.sliderValue === 0 ) {
-			coffeeName = 'milk';
+			data.coffeeName = 'milk';
 		}
 		if(data.espresso.sliderValue === 0 && data.milk.sliderValue === 0 && data.foam.sliderValue != 0 ) {
-			coffeeName = 'foam';
+			data.coffeeName = 'foam';
 		}
 
 		var name = document.getElementById('coffee-name');
-		name.textContent = coffeeName;
+		name.textContent = data.coffeeName;
+
+
+		this.menu(); 
 
 	},
 
-
+	menu: function() { 
+		if(data.coffeeName === 'espresso') {
+			document.getElementById('m-espresso').style.color = 'yellow';
+		}
+		if(data.coffeeName === 'latte') {
+			document.getElementById('m-latte').style.color = 'yellow';
+		}
+		if(data.coffeeName === 'flat white') {
+			document.getElementById('m-flat').style.color = 'yellow';
+		}
+		if(data.coffeeName === 'macchiato') {
+			document.getElementById('m-macchiato').style.color = 'yellow';
+		}
+		if(data.coffeeName === 'cappuccino') {
+			document.getElementById('m-cappuccino').style.color = 'yellow';
+		}
+		if(data.coffeeName === 'piccolo') {
+			document.getElementById('m-piccolo').style.color = 'yellow';
+		}
+	}
 };
 
 event.init();
