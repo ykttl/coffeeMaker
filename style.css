@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Paytone+One');
+
+body {
+    background: #d2a779;
+}
+
+.container {
+	width: 500px;
+    height: 600px;
+    margin: 0 auto;
+    padding: 5px; 
+   font-family: 'Paytone One', sans-serif;
+    text-align: center;
+    background: white;
+}
+
+h1 {
+	color: #804000;
+	font-size: 40px;
+	margin-top: 15px;
+}
+
+
+.sliders {
+	font-size: 20px;
+	text-align: left;
+	margin-left: 140px; 
+}
+
+#espresso-slider{
+	width: 50px;
+
+}
+
+#foam-slider{
+	width: 50px;
+}
+
+p {
+ margin:5px;
+}
+
+
+#magcup {
+    width: 400px;
+    display: flex;
+    margin-left: 120px;
+    margin-top: 40px;
+    position: relative;
+}
+
+	#content {
+	    width: 200px;
+	    height: 250px;
+	    border-radius: 10px;
+	    border: solid 15px #4ec4d3;
+	    border-top: none;          
+	}
+
+	#espresso{
+		width:200px;
+		height: 20px;	
+		position: absolute;
+		z-index: 3;
+	    bottom: 0px;
+		background: #392714;
+		margin: 15px;
+	}
+
+	#milk {
+	    width:200px;
+		height: 100px;	
+		position: absolute;
+		z-index: 1;
+	    bottom: 0px;
+		background: #fdfdce;
+		margin: 15px;
+	}
+
+	
+	#foam{
+	    width:196px;
+		height: 30px;	
+		position: absolute;
+		z-index: 2;
+	    bottom: 0px;
+		background: #f2e6d9;
+		border: dashed 2px gray;
+	 	border-radius: 5px;
+		margin: 15px;
+	}
+
+
+
+.mag-handle {
+    display: inline-block;
+    width: 30px;
+    height: 80px;
+    border: solid 18px #4ec4d3;
+    margin-top: 50px;
+    border-radius: 0px 10px 10px 0px;
+}
+
+#coffee-name {
+	margin-top: 20px;
+	text-align: center;
+	font-size: 30px;
+	color: #ff0066;
+	
+
+
+}
+
+
