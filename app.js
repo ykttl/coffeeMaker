@@ -68,6 +68,15 @@ var event = {
 			}
 
 			render.coffeeName();
+
+
+			var foam = document.getElementById('foam');
+             if (data.foam.height != 0 && data.milk.sliderValue === 0) {
+             	foam.style.bottom = data.espresso.height; 
+             }
+             if (data.foam.height != 0 && data.milk.sliderValue === 0 && data.espresso.sliderValue === 0) {
+             	foam.style.bottom = 0; 
+             }
 			
 	    });
 	},
@@ -129,6 +138,14 @@ var event = {
 
 			render.coffeeName();
 			
+			var foam = document.getElementById('foam');
+            if(data.foam.height != 0) {
+            	foam.style.bottom = data.milk.height; 
+             }  
+             if (data.foam.height != 0 && data.milk.sliderValue === 0) {
+             	foam.style.bottom = 0; 
+             }
+
 	    });
 	},
 
@@ -246,7 +263,7 @@ var render = {
 	},
 
 	coffeeName: function () {
-		//var coffeeName = data.coffeeName;
+		
 		if(data.espresso.sliderValue === 1 && data.milk.sliderValue === 0 && data.foam.sliderValue === 0) {
 			data.coffeeName = 'espresso';
 		}
@@ -301,6 +318,12 @@ var render = {
 		}
 		if(data.coffeeName === 'piccolo') {
 			document.getElementById('m-piccolo').style.color = 'yellow';
+		}
+		if(data.coffeeName === 'milk') {
+			document.getElementById('m-milk').style.color = 'yellow';
+		}
+		if(data.coffeeName === 'foamed milk') {
+			document.getElementById('m-foamed-milk').style.color = 'yellow';
 		}
 	}
 };
