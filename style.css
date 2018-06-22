@@ -4,8 +4,6 @@ body {
     background: #d2a779;
     display: flex;
     justify-content: center;
-
-
 }
 
 .box {
@@ -81,7 +79,7 @@ p {
 
 	#espresso{
 		width:200px;
-		height: 20px;	
+		height: 0px;	
 		position: absolute;
 		z-index: 3;
 	    bottom: 0px;
@@ -91,7 +89,7 @@ p {
 
 	#milk {
 	    width:200px;
-		height: 100px;	
+		height: 0px;	
 		position: absolute;
 		z-index: 1;
 	    bottom: 0px;
@@ -102,12 +100,12 @@ p {
 	
 	#foam{
 	    width:196px;
-		height: 30px;	
+		height: 0px;	
 		position: absolute;
 		z-index: 2;
 	    bottom: 0px;
 		background: #f2e6d9;
-		border: dashed 2px gray;
+		border: none;
 	 	border-radius: 5px;
 		margin: 15px;
 	}
