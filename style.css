@@ -1,4 +1,9 @@
+
+/* google font */
+
 @import url('https://fonts.googleapis.com/css?family=Paytone+One');
+
+/*  general */
 
 body {
     background: #d2a779;
@@ -6,111 +11,103 @@ body {
     justify-content: center;
 }
 
+p {
+    margin:5px;
+}
+
+/* box */
+
 .box {
-	width: 300px;
     height: 600px;
     padding: 5px; 
     margin: 20px;
-   font-family: 'Paytone One', sans-serif;
-    text-align: center;
-    background: pink;
-    font-size: 25px;
-   
+    font-family: 'Paytone One', sans-serif;
+    text-align: center; 
 }
 
-.box p {
-	color: gray;
-}
-
-
-.container {
-	width: 500px;
-    height: 600px;
-   margin: 20px;
-    padding: 5px; 
-   font-family: 'Paytone One', sans-serif;
-    text-align: center;
+.box_left {
+	width: 500px;   
     background: white;
-
 }
 
-h1 {
+.box_right {
+	width: 300px;
+    background: pink;
+    font-size: 25px; 
+}
+
+
+/* title (Coffee Maker) */
+
+h1 {  
 	color: #804000;
 	font-size: 50px;
 	margin-top: 15px;
 }
 
 
-.sliders {
+/* sliders */
+
+.sliders_area {
 	font-size: 20px;
 	text-align: left;
 	margin-left: 140px; 
 }
 
-#espresso-slider{
+#milk-slider {
+	width: 120px;
+}
+
+#espresso-slider, #foam-slider {
 	width: 50px;
-
-}
-
-#foam-slider{
-	width: 50px;
-}
-
-p {
- margin:5px;
 }
 
 
-#magcup {
+/* magcup */
+
+#magcup_area {
     width: 400px;
     display: flex;
     margin-left: 120px;
     margin-top: 40px;
-    position: relative;
+   
 }
 
-	#content {
-	    width: 200px;
-	    height: 250px;
-	    border-radius: 10px;
-	    border: solid 15px #4ec4d3;
-	    border-top: none;          
-	}
+#mag-cup {
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;
+    border: solid 15px #4ec4d3;
+    border-top: none;    
+    position: relative;       
+}
 
-	#espresso{
-		width:200px;
-		height: 0px;	
-		position: absolute;
-		z-index: 3;
-	    bottom: 0px;
-		background: #392714;
-		margin: 15px;
-	}
+.mag-contents {
+	position: absolute;
+	bottom: 0px;
+	height: 0px;	
+}
 
-	#milk {
-	    width:200px;
-		height: 0px;	
-		position: absolute;
-		z-index: 1;
-	    bottom: 0px;
-		background: #fdfdce;
-		margin: 15px;
-	}
+		#espresso{
+			width:200px;
+			z-index: 3;
+			background: #392714;
+		}
 
-	
-	#foam{
-	    width:196px;
-		height: 0px;	
-		position: absolute;
-		z-index: 2;
-	    bottom: 0px;
-		background: #f2e6d9;
-		border: none;
-	 	border-radius: 5px;
-		margin: 15px;
-	}
+		#milk {
+		    width:200px;
+			z-index: 1;
+			background: #fdfdce;	
+		}
 
 
+		#foam{
+		    width:196px;
+			z-index: 2;
+			background: #f2e6d9;
+			border: none;
+		 	border-radius: 5px;			
+		}
 
 .mag-handle {
     display: inline-block;
@@ -121,12 +118,25 @@ p {
     border-radius: 0px 10px 10px 0px;
 }
 
-#coffee-name {
+
+/* coffee-name (default: "Let's Make Coffee!") */
+
+#coffee-name { 
 	margin-top: 20px;
 	text-align: center;
 	font-size: 30px;
-	color: #ff0066;
-	
-
-
+	color: #ff0066;	
 }
+
+/* MENU*/
+
+h2 {  
+    color: black;
+	font-size: 1.5em;	
+}
+
+.box_right p {
+	color: gray;
+}
+
+
